@@ -1,0 +1,12 @@
+[+] Version string: Linux version 4.19.110-perf-g8a493da (builder@c4-miui-ota-bd64.bj) (clang version 10.0.5 for Android NDK) #1 SMP PREEMPT Sat Sep 5 00:36:18 CST 2020
+[+] Guessed architecture: aarch64 successfully in 39.62 seconds
+[+] Found relocations table at file offset 0x266ed68 (count=138924)
+[+] Found kernel text candidate: 0xffffff8008080000
+Traceback (most recent call last):
+  File "/home/shivatejapeddi/dump/vmlinux-to-elf/vmlinux_to_elf/kallsyms_finder.py", line 1102, in <module>
+    kallsyms = KallsymsFinder(obtain_raw_kernel_from_file(kernel_bin.read()), args.bit_size)
+  File "/home/shivatejapeddi/dump/vmlinux-to-elf/vmlinux_to_elf/kallsyms_finder.py", line 188, in __init__
+    self.apply_elf64_rela()
+  File "/home/shivatejapeddi/dump/vmlinux-to-elf/vmlinux_to_elf/kallsyms_finder.py", line 356, in apply_elf64_rela
+    img[offset:offset+8] = pack('<Q', value)
+struct.error: argument out of range
